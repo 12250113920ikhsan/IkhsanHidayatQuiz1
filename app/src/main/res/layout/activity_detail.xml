@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_nama_pelanggan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Pelanggan"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tv_jumlah_barang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jumlah Barang"
+        android:layout_below="@+id/tv_nama_pelanggan"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tv_kode_barang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kode Barang"
+        android:layout_below="@+id/tv_jumlah_barang"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tv_nama_barang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Barang"
+        android:layout_below="@+id/tv_kode_barang"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tv_harga_barang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harga Barang"
+        android:layout_below="@+id/tv_nama_barang"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tv_tipe_member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipe Member"
+        android:layout_below="@+id/tv_harga_barang"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tv_harga_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harga Total"
+        android:layout_below="@+id/tv_tipe_member"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tv_diskon_member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diskon Member"
+        android:layout_below="@+id/tv_harga_total"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tv_harga_diskon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harga Diskon"
+        android:layout_below="@+id/tv_diskon_member"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tv_jumlah_bayar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jumlah Bayar"
+        android:layout_below="@+id/tv_harga_diskon"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btn_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:layout_below="@id/tv_jumlah_bayar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+</RelativeLayout>
