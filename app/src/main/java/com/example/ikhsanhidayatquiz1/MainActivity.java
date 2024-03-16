@@ -44,21 +44,6 @@ public class MainActivity extends AppCompatActivity {
         RadioButton selectedRadioButton = findViewById(selectedRadioButtonId);
        final String tipeMember = selectedRadioButton.getText().toString();
 
-        final double diskon;
-        switch (tipeMember) {
-            case "Gold":
-                diskon = 0.1;
-                break;
-            case "Silver":
-                diskon = 0.05;
-                break;
-            case "Biasa":
-                diskon = 0.02;
-                break;
-            default:
-                diskon = 0;
-        }
-
         // Mengirim data ke aktivitas detail belanja
         Intent intent = new Intent(MainActivity.this, DetailActivity.class);
         intent.putExtra("nama_pelanggan", namaPelanggan);

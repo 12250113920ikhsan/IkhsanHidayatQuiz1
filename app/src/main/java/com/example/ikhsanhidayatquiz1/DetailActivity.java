@@ -36,7 +36,6 @@ public class DetailActivity extends AppCompatActivity {
         int jumlahBarang = intent.getIntExtra("jumlah_barang", 0);
         String kodeBarang = intent.getStringExtra("kode_barang");
         String tipeMember = intent.getStringExtra("tipe_member");
-        final double diskon = intent.getDoubleExtra("diskon", 0);
 
         // Mendapatkan harga barang berdasarkan kode barang
         String namaBarang;
@@ -57,6 +56,21 @@ public class DetailActivity extends AppCompatActivity {
             default:
                 namaBarang = "Unknown";
                 hargaBarang = 0;
+        }
+
+        final double diskon;
+        switch (tipeMember) {
+            case "Gold":
+                diskon = 0.1;
+                break;
+            case "Silver":
+                diskon = 0.05;
+                break;
+            case "Biasa":
+                diskon = 0.02;
+                break;
+            default:
+                diskon = 0;
         }
 
         // Menghitung total harga
