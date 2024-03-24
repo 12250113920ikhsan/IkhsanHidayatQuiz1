@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IkhsanHidayatQuiz1</string>
+    <string name="nama">Name</string>
+    <string name="tipe_pelanggan">Customer Type :</string>
+    <string name="emas">Gold</string>
+    <string name="perak">Silver</string>
+    <string name="biasa">Normal</string>
+    <string name="jumlah_barang">Item Amount</string>
+    <string name="kode_barang_lv3_aa5_mp3">Code (LV3, AA5, MP3)</string>
+    <string name="proses">Process</string>
+    <string name="nama_pelanggan">Name</string>
+    <string name="jumlah_detail">Item Amount</string>
+    <string name="kode_barang_detail">Code</string>
+    <string name="nama_barang">Item Name</string>
+    <string name="harga_barang">Item Price</string>
+    <string name="tipe_member">Member Type</string>
+    <string name="harga_total">Total Price</string>
+    <string name="diskon_member">Member Discount</string>
+    <string name="harga_diskon">Discount Price</string>
+    <string name="jumlah_bayar">Payment Amount</string>
+    <string name="bagikan">Share</string>
+</resources>

@@ -3,22 +3,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/et_nama_pelanggan"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Nama"
-        android:layout_margin="16dp"/>
+        android:layout_height="wrap_content">
 
+        <com.google.android.material.textfield.TextInputEditText
+            android:textColorHint="@color/black"
+            android:id="@+id/et_nama_pelanggan"
+            android:hint="@string/nama"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/tv_tipe_pelanggan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tipe Pelanggan : "
-        android:layout_below="@id/et_nama_pelanggan"
+        android:text="@string/tipe_pelanggan"
+        android:layout_below="@id/edit1"
         android:textSize="16dp"
         android:gravity="center_horizontal"/>
 
@@ -28,52 +36,68 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@id/et_nama_pelanggan"
+        android:layout_below="@id/tv_tipe_pelanggan"
         android:layout_margin="16dp">
 
         <RadioButton
             android:id="@+id/rb_gold"
-            android:layout_width="wrap_content"
+            android:layout_width="82dp"
             android:layout_height="wrap_content"
-            android:text="Gold" />
+            android:text="@string/emas" />
 
         <RadioButton
             android:id="@+id/rb_silver"
-            android:layout_width="wrap_content"
+            android:layout_width="90dp"
             android:layout_height="wrap_content"
-            android:text="Silver" />
+            android:text="@string/perak" />
 
         <RadioButton
             android:id="@+id/rb_biasa"
-            android:layout_width="wrap_content"
+            android:layout_width="89dp"
             android:layout_height="wrap_content"
-            android:text="Biasa"/>
+            android:text="@string/biasa" />
     </RadioGroup>
 
-    <EditText
-        android:id="@+id/et_jumlah_barang"
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@+id/rg_tipe_member"
+        android:id="@+id/edit2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/rg_tipe_member"
-        android:layout_margin="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:hint="Jumlah Barang" />
+        android:layout_height="wrap_content">
 
-    <EditText
-        android:id="@+id/et_kode_barang"
+        <com.google.android.material.textfield.TextInputEditText
+            android:textColorHint="@color/black"
+            android:id="@+id/et_jumlah_barang"
+            android:text=""
+            android:hint="@string/jumlah_barang"
+            android:layout_width="match_parent"
+            android:layout_below="@id/rg_tipe_member"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@+id/edit2"
+        android:id="@+id/edit3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Kode Barang (LV3, AA5, MP3)"
-        android:layout_margin="16dp"
-        android:layout_below="@id/et_jumlah_barang"/>
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:textColorHint="@color/black"
+            android:text=""
+            android:id="@+id/et_kode_barang"
+            android:hint="@string/kode_barang_lv3_aa5_mp3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_jumlah_barang"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btn_proses"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Proses"
-        android:layout_below="@id/et_kode_barang"
+        android:text="@string/proses"
+        android:layout_below="@id/edit3"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"/>
 
